@@ -11,6 +11,11 @@
 		ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5E04129BE957F00DD981A /* ContentView.swift */; };
 		ACF5E04429BE958000DD981A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04329BE958000DD981A /* Assets.xcassets */; };
 		ACF5E04729BE958000DD981A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF5E04629BE958000DD981A /* Preview Assets.xcassets */; };
+		E6DC56F32A362EE700FE4C53 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC56F22A362EE700FE4C53 /* Model.swift */; };
+		E6DC56F82A36440900FE4C53 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC56F72A36440900FE4C53 /* QuestionView.swift */; };
+		E6DC56FA2A36457400FE4C53 /* AnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC56F92A36457400FE4C53 /* AnswersView.swift */; };
+		E6DC56FC2A364BDB00FE4C53 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC56FB2A364BDB00FE4C53 /* ViewModel.swift */; };
+		E6DC56FF2A3674FC00FE4C53 /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DC56FE2A3674FC00FE4C53 /* ResultsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		ACF5E04129BE957F00DD981A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACF5E04329BE958000DD981A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF5E04629BE958000DD981A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6DC56F22A362EE700FE4C53 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E6DC56F72A36440900FE4C53 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		E6DC56F92A36457400FE4C53 /* AnswersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersView.swift; sourceTree = "<group>"; };
+		E6DC56FB2A364BDB00FE4C53 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		E6DC56FD2A36529700FE4C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6DC56FE2A3674FC00FE4C53 /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,11 @@
 		ACF5E03E29BE957F00DD981A /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
+				E6DC56FD2A36529700FE4C53 /* Info.plist */,
+				E6DC56FB2A364BDB00FE4C53 /* ViewModel.swift */,
 				ACF5E03F29BE957F00DD981A /* Assignment3App.swift */,
-				ACF5E04129BE957F00DD981A /* ContentView.swift */,
+				E6DC56F42A362EF300FE4C53 /* Models */,
+				E6DC56F12A362EC700FE4C53 /* Views */,
 				ACF5E04329BE958000DD981A /* Assets.xcassets */,
 				ACF5E04529BE958000DD981A /* Preview Content */,
 			);
@@ -65,6 +79,25 @@
 				ACF5E04629BE958000DD981A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6DC56F12A362EC700FE4C53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5E04129BE957F00DD981A /* ContentView.swift */,
+				E6DC56F72A36440900FE4C53 /* QuestionView.swift */,
+				E6DC56F92A36457400FE4C53 /* AnswersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6DC56F42A362EF300FE4C53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6DC56F22A362EE700FE4C53 /* Model.swift */,
+				E6DC56FE2A3674FC00FE4C53 /* ResultsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DC56F82A36440900FE4C53 /* QuestionView.swift in Sources */,
+				E6DC56F32A362EE700FE4C53 /* Model.swift in Sources */,
 				ACF5E04229BE957F00DD981A /* ContentView.swift in Sources */,
 				ACF5E04029BE957F00DD981A /* Assignment3App.swift in Sources */,
+				E6DC56FC2A364BDB00FE4C53 /* ViewModel.swift in Sources */,
+				E6DC56FF2A3674FC00FE4C53 /* ResultsModel.swift in Sources */,
+				E6DC56FA2A36457400FE4C53 /* AnswersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +307,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Assignment3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Assignment3/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
