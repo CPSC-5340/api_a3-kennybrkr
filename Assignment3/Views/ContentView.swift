@@ -28,7 +28,7 @@ struct ContentView: View {
                 quizvm.fetchData()
             }
             .listStyle(.grouped)
-            .navigationTitle("Questions")
+            .navigationTitle("Trivia Questions:")
         }
     }
 }
