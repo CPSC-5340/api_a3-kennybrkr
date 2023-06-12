@@ -27,8 +27,13 @@ struct QuestionView: View {
                     Text(question.difficulty)
                 }
             }
+            
             Spacer()
-            Text(question.question)
+            
+            let questionText = question.question.replacingOccurrences(of: "&quot;", with: "\"", options: NSString.CompareOptions.literal, range:nil)
+            let questionText2 = questionText.replacingOccurrences(of: "&#039;", with: "\'")
+            let questionText3 = questionText2.replacingOccurrences(of: "&deg;", with: " Degrees ")
+            Text(questionText3)
                 .padding()
                 .multilineTextAlignment(.center)
                 .overlay {

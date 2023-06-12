@@ -14,11 +14,13 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(quizvm.Data) { quiz in
-                    
+                    let questionText = quiz.question.replacingOccurrences(of: "&quot;", with: "\"", options: NSString.CompareOptions.literal, range:nil)
+                    let questionText2 = questionText.replacingOccurrences(of: "&#039;", with: "\'")
+                    let questionText3 = questionText2.replacingOccurrences(of: "&deg;", with: " Degrees ")
                     NavigationLink {
                         QuestionView(question: quiz)
                     } label: {
-                        Text(quiz.question)
+                        Text(questionText3)
                     }
                 }
             }
