@@ -13,12 +13,31 @@ struct QuestionView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            HStack {
-                Text(question.category)
-                Text(question.type)
-                Text(question.difficulty)
+            VStack(spacing: 15) {
+                VStack {
+                    Text("Category:")
+                    Text(question.category)
+                }
+                VStack {
+                    Text("Type:")
+                    Text(question.type)
+                }
+                VStack {
+                    Text("Difficulty:")
+                    Text(question.difficulty)
+                }
             }
+            Spacer()
             Text(question.question)
+                .padding()
+                .multilineTextAlignment(.center)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(.blue, lineWidth: 2)
+                }
+                .font(.system(size: 24))
+                .padding()
+            Spacer()
             AnswersView(question: question)
         }
     }
